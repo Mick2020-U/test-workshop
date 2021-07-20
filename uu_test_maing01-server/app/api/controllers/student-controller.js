@@ -1,16 +1,15 @@
 "use strict";
-const StudentAbl = require("../../abl/student-abl.js");
+const CreateAbl = require("../../abl/student/create-abl");
+const GetAbl = require("../../abl/student/get-abl");
 
 class StudentController {
-
   get(ucEnv) {
-    return StudentAbl.get(ucEnv.getUri().getAwid(), ucEnv.getDtoIn());
+    return GetAbl.get(ucEnv.getUri().getAwid(), ucEnv.getDtoIn());
   }
 
   create(ucEnv) {
-    return StudentAbl.create(ucEnv.getUri().getAwid(), ucEnv.getDtoIn());
+    return CreateAbl.create(ucEnv.getUri().getAwid(), ucEnv.getDtoIn());
   }
-
 }
 
 module.exports = new StudentController();
