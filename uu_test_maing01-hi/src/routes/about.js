@@ -16,17 +16,6 @@ const STATICS = {
   //@@viewOff:statics
 };
 
-
-
-
-
-
-
-
-
-
-
-
 const CLASS_NAMES = {
   main: () => Config.Css.css`
     .plus4u5-app-about > .uu5-bricks-header,
